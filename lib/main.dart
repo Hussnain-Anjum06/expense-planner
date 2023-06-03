@@ -23,10 +23,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Personal Expenses',
+      title: 'Expense Planner',
       theme: ThemeData(
         primarySwatch: Colors.purple,
-        
         fontFamily: 'Quicksand',
         textTheme: TextTheme(
           headline6: TextStyle(
@@ -43,7 +42,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -118,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final PreferredSizeWidget appBar = Platform.isIOS
         ? CupertinoNavigationBar(
             middle: Text(
-              'Personal Expenses',
+              'Expense Planner',
             ),
             trailing: Row(
               mainAxisSize: MainAxisSize.min,
@@ -134,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
             preferredSize: Size.fromHeight(50.0),
             child: AppBar(
               title: Text(
-                'Personal Expenses',
+                'Expense Planner',
                 style: TextStyle(fontFamily: 'Quicksand'),
               ),
               actions: <Widget>[

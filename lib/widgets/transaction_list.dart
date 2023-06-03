@@ -33,7 +33,7 @@ class TransactionList extends StatelessWidget {
             );
           })
         : ListView.builder(
-            itemBuilder: (ctx, index) {
+            itemBuilder: (ctx, int index) {
               return Card(
                 elevation: 5,
                 margin: EdgeInsets.symmetric(
